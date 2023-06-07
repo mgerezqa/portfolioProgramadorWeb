@@ -448,7 +448,16 @@
             bottom: -40px;
             transition: .5s;
         }
-        
+                
+        #portfolio .fila .proyecto .info a{
+            color: #fff;
+        }
+        #portfolio .fila .proyecto .info a:hover{
+            color: #ff5080;
+
+        }
+
+
         #portfolio .fila .proyecto:hover .info {
             opacity: 1;
             bottom: 0;
