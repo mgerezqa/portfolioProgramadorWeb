@@ -435,13 +435,6 @@
             text-align: -webkit-center;
         }
         
-         .link-title{
-            height: 2rem;
-            color: var(--color1);
-            text-align: -moz-center;
-            text-align: -webkit-center;
-        }
-
         #projects .tecs h4{
             /* padding: 8px 8px; */
             height: 2rem;
@@ -452,6 +445,14 @@
             text-align: -webkit-center;
 
         }
+        
+        .link-title{
+            height: 2rem;
+            color: var(--color1);
+            text-align: -moz-center;
+            text-align: -webkit-center;
+        }
+
 
         #container{
             width: 100%;
@@ -494,12 +495,15 @@
         .link-container a {
             color: var(--color2);
             text-decoration: none;
-
         }
 
         .preview-img{
             max-width: 98%;
             height: 220px;
+            display: block; /* Añade esto para manejar el margen automático */
+            margin: 0 auto; /* Añade esto para centrar la imagen horizontalmente */
+            /* border-radius: 1rem;
+            border: 2px solid var(--color2); */
         }
         
         .link-description {
