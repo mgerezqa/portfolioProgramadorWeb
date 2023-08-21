@@ -223,7 +223,7 @@
             letter-spacing: 1px;
         }
         
-        #sobremi .sobremi, .sobremi_parrafo p {
+        #sobremi .sobremi p , .sobremi_parrafo p {
             font-size: 14px;
             line-height: 25px;
             color: #565656;
@@ -681,12 +681,14 @@
             #sobremi .contenedor-foto {
                 max-width: 200px;
                 margin: auto;
+                /* margin: 50px 155px; */
             }
 
             #sobremi .contenedor-foto img {
                 padding: 8px;
             }
             #sobremi .sobremi .titulo-seccion {
+                margin-top: 30px;
                 text-align: center;
             }
             #sobremi .sobremi h2 {
