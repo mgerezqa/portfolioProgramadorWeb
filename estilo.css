@@ -157,7 +157,7 @@
         #sobremi {
             max-width: 1100px;
             margin: auto;
-            padding: 100px 15px;
+            padding: 50px 15px;
             color: #111135;
             display: flex;
             flex-wrap: wrap; /* Asegúrate de tener esta propiedad */
@@ -233,7 +233,7 @@
 
         .descargarCV{
             text-align: center;
-            margin-top: 15px;
+            margin: 15px 0px 30px 0px;
         }
 
         .descargarCV  a {
