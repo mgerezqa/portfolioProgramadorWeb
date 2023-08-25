@@ -524,7 +524,7 @@
         
         .link-description {
             height: 8rem;
-            padding: auto;
+            padding: 0px 10px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -534,8 +534,8 @@
         
         .link-description .items{
             /* height: 8rem; */
-            text-align: left;
-            /* align-items:center; */
+            text-align: justify;
+            align-items:center;
 
         }
         
