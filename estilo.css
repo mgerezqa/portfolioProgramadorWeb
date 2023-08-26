@@ -638,6 +638,59 @@
         /* *********************/
         /* seccion R E S P O N S I V E */
         /* *********************/
+
+        @media screen and (max-width: 300px) {
+            .redes {
+                display: none;
+            }
+            nav {
+                display: none;
+            }
+
+            .link-container {
+                /* Estilos específicos para pantallas pequeñas aquí */
+                width: auto; /* Otra propiedad de ancho adecuada para pantallas pequeñas */
+                padding: auto; /* Ajusta el relleno según sea necesario */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            /* Ajusta otros estilos para pantallas pequeñas aquí */
+            .link-title {
+                font-size: 0.75rem;
+                /* Estilos específicos para el título en pantallas pequeñas */
+            }
+        
+            .preview-img {
+                /* Estilos específicos para la imagen en pantallas pequeñas */
+                width: 12rem; /* Asegura que la imagen ocupe todo el ancho disponible */
+                height: 12rem;
+                margin: auto;
+            }
+
+            .link-container .tecs{
+                margin-top: 1rem;
+                font-size: 0.8rem;
+            }
+        
+            .link-description {
+                font-size: 0.7rem;
+                /* Estilos específicos para la descripción en pantallas pequeñas */
+            }
+
+            /* .link-container .tecs{
+                margin: auto;
+            } */
+        
+            .link-container .pill-stacks .pill-icon {
+                font-size: 0.75rem;
+                width: 3rem;
+                /* Estilos específicos para los iconos de tecnologías en pantallas pequeñas */
+            }
+
+            
+        }
         
         @media screen and (max-width: 800px) {
             .redes {
@@ -739,7 +792,10 @@
             
             #projects {
                 padding: 50px 0;
-            } 
+            }
+            /* #projects .link-container.entered{
+                padding: 50px;
+            }  */
             
             /* seccion CONTACTO */
             #contacto {
@@ -754,3 +810,5 @@
                 margin-bottom: 15px;
             }
         }
+
+
