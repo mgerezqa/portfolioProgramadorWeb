@@ -166,8 +166,8 @@
         }
         
         #sobremi .contenedor-foto {
-            max-width: 400px;
-            margin: 0px 100px auto auto ;
+            max-width: 25rem;
+            margin: 0px 6rem auto auto ;
             border-width: 1px;
         }
         
@@ -549,7 +549,12 @@
             width: 4rem;
             padding: .2rem;
         }
-        
+        /* *********************/
+        /* seccion IFRAME */
+        /* *********************/  
+        #iframe-descripcion  {
+            width: 100%;
+        }
 
 
         /* *********************/
