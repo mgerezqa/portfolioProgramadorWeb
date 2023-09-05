@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="../../estiloProyect.css">
+    <!-- <link rel="stylesheet" href="../../estiloProyect.css"> -->
+    <link rel="stylesheet" href="../estiloProyect.css">
     <link rel= "icon" href= "../../img/BugIcon.png">
-    <meta http-equiv="Content-Security-Policy" 
-    content="estiloProyect.css 'self 'nonce-AbcdMar9Ag0st0202'; " />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';"> -->
     <title> SAUCEDEMO </title>
 </head>
 
@@ -23,7 +24,7 @@
                     <h1>SAUCEDEMO AUTOMATION</h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="../../index.html" class="seleccionado" >INICIO</a></li>
+                            <!-- <li><a href="../../index.html" class="seleccionado" >INICIO</a></li> -->
                             <!-- <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
                             <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
                             <li><a href="#projects" onclick="seleccionar(this)">PORTFOLIO QA</a></li>
@@ -37,37 +38,20 @@
                      <!-- Icono de las redes sociales -->
                     <div class="redes">
                         <a href="https://github.com/mgerezqa" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/mgerez" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>   
+                        <a href="https://www.linkedin.com/in/mgerez" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>   
                     </div>
                 </div>
             </header>
     </section>
 
     <!-- SECCION DESCRIPCIÓN -->
-    <style nonce= "AbcdMar9Ag0st0202" > </style>
+    <div id="contenido"></div>
 
-    <section id = "contenido-proyecto"> 
-        <div id="contenido-documento"></div>
-        <script>
-        document.addEventListener("DOMContentLoaded", function () 
-        {
-        var contenedor = document.getElementById("contenido-documento");
-
-        var url = "docSauceDemo.html";
-        fetch(url)
-            .then(function (response) {
-                return response.text();
-            })
-            .then(function (html) {
-                // Agregar el contenido del segundo documento al elemento contenedor
-                contenedor.innerHTML = html;
-            })
-            .catch(function (error) {
-                console.error("Error al cargar el segundo documento: " + error);
-            });
+    <script>
+        $(document).ready(function() {
+            $('#contenido').load("READMESauceDemo.html");
         });
-        </script>
-    </section>
+    </script>
 
 <!-- SECCION FOOTER -->
     <footer>
@@ -79,7 +63,7 @@
         
     </footer>
 
-    <!-- <script src="..//script.js"></script> -->
+    <script src="..//script.js"></script>
 
 </body>
 

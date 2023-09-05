@@ -81,6 +81,7 @@
             display: inline-block;
             margin-left: 10px;
             transition: .5s;
+            
         }
         
         #inicio .contenido header .contenido-header .redes a:hover {
@@ -625,7 +626,6 @@
         /* *********************/
         /* seccion F O O T E R */
         /* *********************/
-        
         footer {
             background-color: #000;
             color: #fff;

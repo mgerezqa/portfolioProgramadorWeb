@@ -24,17 +24,14 @@ scroll-behavior: smooth;
 
 /* Estilos para la sección "inicio" */
 #inicio {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/fondo-inicio.jpg");
+    /* background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)) ; */
+    background: #000 ;
     background-size: cover;
     background-position: center center;
-    padding: 20px 0; /* Ajusta el espacio superior e inferior según tu diseño */
+    padding: 30px 0; /* Ajusta el espacio superior e inferior según tu diseño */
     /* position: relative; Hace que los elementos hijos se posicionen de forma absoluta dentro de este contenedor */
 }
 
-#inicio .contenido .contenido-header #nav #links{
-    text-decoration: none!important;
-    text-decoration-line: none;
-}
 .contenido-header {
     max-width: 1100px;
     margin: 0 auto;
@@ -46,14 +43,11 @@ scroll-behavior: smooth;
 
 }
 
-#inicio .contenido header .contenido-header h1 {
-    text-align: center;
-    color: #ff5080;
-}
 
 .contenido-header h1 {
     text-align: center;
     color: #ff5080;
+    border-bottom: unset;
     margin: 0; /* Elimina el margen para evitar desplazamientos no deseados */
     position: absolute; /* Posición absoluta para centrar el título */
     left: 50%; /* Lo coloca en el centro horizontalmente */
@@ -62,7 +56,6 @@ scroll-behavior: smooth;
 
 .links {
     position: absolute; /* Posición absoluta para el enlace de inicio */
-    list-style: none;
     display: flex;
     align-items: center; /* Centra verticalmente los enlaces de navegación */
     margin: 0; /* Ajusta el margen a cero para evitar espacios innecesarios */
@@ -71,7 +64,8 @@ scroll-behavior: smooth;
 }
 
 #links a {
-    text-decoration: none !important;
+    text-decoration: none;
+    outline: none;
     color: #fff;
     font-weight: 400;
     transition: .5s;
@@ -79,16 +73,17 @@ scroll-behavior: smooth;
 
 }
 
-#links a:hover {
-    color: #ff5080;
-    background-color: none;
-}
 
+.redes a:hover {
+    color: #ff5080;
+
+}
 
 #inicio .contenido header .redes {
     font-size: 1.5rem;
     display: flex;
-    text-decoration: none!important;
+    text-decoration: none;
+    outline: none;
     align-items: center; /* Centra verticalmente las redes sociales */
     margin: 0; /* Ajusta el margen a cero para evitar espacios innecesarios */
     position: absolute; /* Posición absoluta para las redes sociales */
@@ -96,15 +91,16 @@ scroll-behavior: smooth;
 }
 
 .redes a {
-    text-decoration: none!important;
+    text-decoration: none;
+    outline: none;
     color: #fff;
     margin-left: 10px;
     transition: .5s;
+
+
 }
 
-.redes a:hover {
-    color: #ff5080;
-}
+
 
 
 
@@ -123,30 +119,37 @@ margin-top: 3rem;
 footer {
     background-color: #000;
     color: #fff;
-    /* padding: 30px 0; */
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    text-align: center;
+    padding: 30px 0;
 }
-
-
-
-
 
 footer a {
-    text-decoration: none!important;
-    color: #fbf7ff;
-    /* display: inline-block; */
-    /* margin: 5px; */
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
     font-size: 26px;
 }
+
+footer p{
+    text-align: center;
+}
+
+
+/* 
 /* *********************/
 /* seccion R E S P O N S I V E */
 /* *********************/
 
+
 @media screen and (max-width: 300px) {
+    h1 {
+        font-size: 18px; /* Tamaño de fuente aún más pequeño para pantallas muy pequeñas */
+        margin: 0; /* Elimina el margen para evitar desplazamientos no deseados */
+        position: absolute; /* Posición absoluta para centrar el título */
+        left: 50%; /* Lo coloca en el centro horizontalmente */
+        transform: translateX(-50%); /* Lo centra completamente */
+    }
     .redes {
         display: none;
     }
@@ -154,81 +157,26 @@ footer a {
         display: none;
     }
 
-    .link-container {
-        /* Estilos específicos para pantallas pequeñas aquí */
-        width: auto; /* Otra propiedad de ancho adecuada para pantallas pequeñas */
-        padding: auto; /* Ajusta el relleno según sea necesario */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Ajusta otros estilos para pantallas pequeñas aquí */
-    .link-title {
-        font-size: 0.75rem;
-        /* Estilos específicos para el título en pantallas pequeñas */
-    }
-
-    .preview-img {
-        /* Estilos específicos para la imagen en pantallas pequeñas */
-        width: 12rem; /* Asegura que la imagen ocupe todo el ancho disponible */
-        height: 12rem;
-        margin: auto;
-    }
-
-    .link-container .tecs{
-        margin-top: 1rem;
-        font-size: 0.8rem;
-    }
-
-    .link-description {
-        font-size: 0.7rem;
-        /* Estilos específicos para la descripción en pantallas pequeñas */
-    }
-
-    /* .link-container .tecs{
-        margin: auto;
-    } */
-
-    .link-container .pill-stacks .pill-icon {
-        font-size: 0.75rem;
-        width: 3rem;
-        /* Estilos específicos para los iconos de tecnologías en pantallas pequeñas */
-    }
-
-    
 }
 
 @media screen and (max-width: 800px) {
+    h1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        margin: 0; /* Elimina el margen para evitar desplazamientos no deseados */
+        position: absolute; /* Posición absoluta para centrar el título */
+        left: 50%; /* Lo coloca en el centro horizontalmente */
+        transform: translateX(-50%); /* Lo centra completamente */
+    }
     .redes {
         display: none;
     }
     nav {
-        display: none;
+        display: unset;
     }
-    nav.responsive {
-        display: block;
-        background-color: rgba(0, 0, 0, .8);
-        width: 100%;
-        position: absolute;
-        top: 48px;
-        left: 0;
-        padding: 10px 0;
-    }
-    nav.responsive ul {
-        display: block !important;
-        text-align: center;
-    }
-    nav.responsive ul li {
-        margin: 5px 0;
-    }
-    #icono-nav {
-        display: block;
-    }
+
     #inicio .contenido .presentacion h2 {
         font-size: 40px;
     }
  
 }
-
 
