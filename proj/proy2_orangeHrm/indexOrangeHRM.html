@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="../../estiloProyect.css"> -->
+    <link rel="stylesheet" href="../estiloProyect.css">
+    <link rel= "icon" href= "../../img/BugIcon.png">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://www.linkedin.com https://github.com; script-src 'self' 'unsafe-inline' 'unsafe-eval';"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title> Proyecto Saucedemo </title>
+
+    <style>
+        /* Estilos para la pantalla de carga */
+        #cargando {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding-top: 20%;
+        }
+    </style>
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';"> -->
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>OrangeHRM Automation</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <!-- <li><a href="../../index.html" class="seleccionado" >INICIO</a></li> -->
+                            <!-- <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#projects" onclick="seleccionar(this)">PORTFOLIO QA</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li> -->
+                        </ul>
+                    </nav>
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                     <!-- Icono de las redes sociales -->
+                    <div class="redes">
+                        <a href="https://github.com/mgerezqa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mgerez" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>   
+                    </div>
+                </div>
+            </header>
+    </section>
+
+      <!-- Pantalla de carga -->
+      <div id="cargando">Cargando...</div>
+    
+
+    <!-- SECCION DESCRIPCIÓN -->
+    <div id="contenido"></div>
+
+    <script>
+              $(document).ready(function() {
+            // Mostrar la pantalla de carga
+            $('#cargando').show();
+            
+            // Cargar el contenido HTML
+            $('#contenido').load("READMESauceDemo.html", function() {
+                // Ocultar la pantalla de carga una vez que se ha cargado el contenido
+                $('#cargando').hide();
+                // Mostrar el contenido
+                $('#contenido').show();
+            });
+        });
+    </script>
+
+<!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="https://github.com/mgerezqa" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mgerez" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+        </div>
+        
+    </footer>
+
+    <script src="..//script.js"></script>
+
+</body>
+
+</html>
+
