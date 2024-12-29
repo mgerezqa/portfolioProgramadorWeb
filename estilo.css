@@ -311,18 +311,32 @@
         }
         
         #servicios .fila .servicio hr {
-            width: 30%;
+            width: 80%;
             margin: auto;
             color: #000;
             margin-bottom: 25px;
         }
         
         #servicios .fila .servicio ul {
-            list-style: none;
+            /* list-style: none;
             display: flex;
             justify-content: space-around;
-            margin-bottom: 10px;
+            margin-bottom: 10px; */
+            padding: 0 3em;
+            margin: 0;
+            justify-content: justify;     
+            
         }
+
+        #servicios .fila .servicio ul li {
+            list-style: disc;
+            /* display: flex; */
+            /* justify-content: space-around; */
+            margin-bottom: 5px;
+            /* text-align: justify; */
+            align-items:center;
+        }
+        
         
         #servicios .fila .servicio p {
             font-size: 14px;
